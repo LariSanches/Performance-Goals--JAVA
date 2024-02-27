@@ -3,6 +3,8 @@ package produto;
 import java.io.IOException;
 import java.util.InputMismatchException;
 import java.util.Scanner;
+import produto.model.Chocolates;
+import produto.model.Formas;
 import produto.util.Cores;
 
 public class Menu {
@@ -11,6 +13,14 @@ public class Menu {
 		// TODO Auto-generated method stub
 
 		Scanner leia = new Scanner(System.in);
+
+		// testando sub-classe chocolates
+		Chocolates c1 = new Chocolates(1, "Chocolate Sicao", 1, 72.0f, "meio amargo");
+		c1.visualizar();
+
+		// testando sub-classe formas
+		Formas f1 = new Formas(2, "Forma Retangular", 2, 35.5f, "15x10x8");
+		f1.visualizar();
 
 		int opcao;
 
